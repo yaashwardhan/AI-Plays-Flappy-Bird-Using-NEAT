@@ -4,7 +4,7 @@ Programmer: Yashwardhan Deshmukh
 github.com/yaashwardhan
 yaashwardhan.me
 
-Approach: Programming Flappy Bird Classes --> Implementing Physics and Death Mechanics --> Implementing Pixel Precision Collision Accuracy and Mechanics --> Implementing a Neural Network using N.E.A.T --> Breeding 14 Birds every generation untill a certain fitness threshold (1000 here) is obtained
+Approach: Programming Flappy Bird Classes --> Implementing Physics and Death Mechanics --> Implementing Pixel Precision Collision Accuracy and Mechanics --> Implementing a Neural Network using N.E.A.T --> Breeding 14 Birds every generation until a certain fitness threshold (1000 here) is obtained
 """
 
 import os
