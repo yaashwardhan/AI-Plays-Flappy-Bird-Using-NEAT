@@ -3,7 +3,7 @@
 fitness_criterion     = max 
 # the fitness level we want before we terminate the program
 fitness_threshold     = 1000 
-pop_size              = 14
+pop_size              = 15
 # even if all the species become simultaneously extinct due to stagnation, no new random population will be created
 reset_on_extinction   = False
 
