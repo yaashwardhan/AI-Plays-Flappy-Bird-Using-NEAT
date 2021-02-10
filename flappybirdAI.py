@@ -293,14 +293,13 @@ def main(genomes, config):
                 pipe_number = 1
 
         for bird in birds:
-            # pass some values to a neural network associated to a bird, check its output value and tell the bird to jump if the output value is > 0.5
             bird.move()
             # adding fitness since it has come to this level, also giving such little fitness value because the for loop will run 30 times a second so every second our bird stays alive, it will give it some fitness point, so this encourages the bird to stay alive
             ge[birds.index(bird)].fitness += 0.2
 
             output = nets[birds.index(bird)].activate((bird.y, abs(
                 bird.y - pipes[pipe_number].height), abs(bird.y - pipes[pipe_number].bottom)))
-
+            # if output of the neural network is > 0, we will make the bird jump ( > 0 was figured out by trial and error)
             if output[0] > 0:
                 bird.jump()
         base.move()
