@@ -246,9 +246,9 @@ def draw_window(win, birds, pipes, base, score, gen, pipe_number, fitness):
     for bird in birds:
         bird.draw(win)
     pygame.display.update()
+    
 
-# the main function will also act as fitness function
-
+# the main() will also act as a fitness function for the program
 
 def main(genomes, config):
     global generations
@@ -370,4 +370,4 @@ if __name__ == "__main__":
     run(config_path)
 
 
-# Thank you! If you liked this program, you could show me support by following me or starring/forking my repos --> github.com/yaashwardhan
+# Thank you! If you liked this project, you could show me support by following me or starring my repos --> github.com/yaashwardhan
