@@ -294,7 +294,7 @@ def main(genomes, config):
 
         for bird in birds:
             bird.move()
-            # adding fitness since it has come to this level, also giving such little fitness value because the for loop will run 30 times a second so every second our bird stays alive, it will give it some fitness point, so this encourages the bird to stay alive
+            # adding fitness since it has come to this level, also giving such little fitness value because the for loop will run 60 times a second so every second our bird stays alive, it will give it some fitness point, so this encourages the bird to stay alive
             ge[birds.index(bird)].fitness += 0.2
 
             output = nets[birds.index(bird)].activate((bird.y, abs(
