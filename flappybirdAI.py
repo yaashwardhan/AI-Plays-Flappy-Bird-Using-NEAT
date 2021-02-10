@@ -218,26 +218,26 @@ def draw_window(win, birds, pipes, base, score, gen, pipe_number, fitness):
     # showing all the text labels
     score_text = flappy_font.render(str(score), 0, (255, 255, 255))
     win.blit(score_text, (window_width - score_text.get_width() - 230, 100))
-    #
+    # showing the generation number
     gen_text = window_font.render(
         "Species Generation Num: " + str(gen), 1, (0, 0, 0))
     win.blit(gen_text, (10, 5))
-
+    # showing the number of birds that are alive in the provided frame
     alive_text = window_font.render("Alive: " + str(len(birds)), 1, (0, 0, 0))
     win.blit(alive_text, (10, 25))
-
+    # showing the total number of birds that have been mutated in the current frame
     mutated_text = window_font.render(
         "Mutated: " + str(15 - len(birds)), 1, (231, 84, 128))
     win.blit(mutated_text, (10, 45))
-
+    # showing the fitness value of the birds
     fitness_text = window_font.render(
         "Fitness: " + str(fitness), 1, (0, 255, 0))
     win.blit(fitness_text, (10, 65))
-
+    # showing the fitness threshold that should be reached before automatically terminating the program
     fitness_t_text = window_font.render(
         "Fitness Threshold: 1000", 1, (0, 0, 0))
     win.blit(fitness_t_text, (window_width - fitness_t_text.get_width() - 10, 5))
-
+    # showing the population of the birds that will be bred every generation
     population_text = window_font.render("Population: 15", 1, (0, 0, 0))
     win.blit(population_text, (window_width -
                                population_text.get_width() - 10, 25))
